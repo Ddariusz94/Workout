@@ -9,59 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="224d39e1-8fe4-4225-952e-87f38f4f10d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/ExerciseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/FormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/TrainingFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserExerciseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/WorkoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Dao/ExerciseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Dao/UserExerciseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Dao/WorkoutDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Model/Exercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Model/UserExercises.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Model/Workout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Service/ExerciseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Service/UserExercisesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Service/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Service/WorkoutRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/barki.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biceps.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/brzuch.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cwiczenia.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dolnePartie.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/exercises.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/gornePartie.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/klata.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/parts.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/plecy.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/redirect.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration-form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration-success.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trainForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/treningGornychPartiiTrudny.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/treningOgolnyLatwy.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/treningi.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/wyborTreningu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/coderslab/AppTest.java" afterDir="false" />
+    <list default="true" id="224d39e1-8fe4-4225-952e-87f38f4f10d7" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserExercisesForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userExerciseForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/FormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserExerciseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserExerciseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Dao/UserExerciseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Dao/UserExerciseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Model/UserExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Model/UserExercises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Model/Workout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Model/Workout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Service/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Service/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration-form.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +46,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="971e4b31-6dd4-4e6d-bb0a-264881a21f64" />
+        <option name="url" value="https://github.com/Ddariusz94/Workout.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -99,37 +76,40 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2QC8RkMK2bUVHLnUB3csGaxjUuU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/ddariuz94/Pulpit/PROJECT COPY/Projekt Workout/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "a685f34e1162e9e380d396f85ba25c30",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ddariuz94/Pulpit/PROJECT COPY/Projekt Workout/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a685f34e1162e9e380d396f85ba25c30&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
@@ -327,11 +307,48 @@
       <workItem from="1685522541659" duration="7622000" />
       <workItem from="1685530870734" duration="514000" />
       <workItem from="1685543824051" duration="3368000" />
-      <workItem from="1685698520390" duration="563000" />
+      <workItem from="1685698520390" duration="5043000" />
+      <workItem from="1685780349516" duration="8841000" />
+      <workItem from="1686906623106" duration="19978000" />
+      <workItem from="1687011125968" duration="7119000" />
+      <workItem from="1687080234479" duration="12117000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1685699467791</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685699467791</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init commit">
+      <created>1685699564058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685699564058</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init commit">
+      <created>1685699579301</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685699579301</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init commit">
+      <created>1685699593251</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685699593251</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
 </project>

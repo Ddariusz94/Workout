@@ -11,6 +11,8 @@ import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.validation.Validator;
+import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.web.servlet.LocaleContextResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
@@ -90,6 +92,10 @@ public class AppConfig implements WebMvcConfigurer {
     public PersistenceExceptionTranslationPostProcessor exceptionTranslation(){
         return new PersistenceExceptionTranslationPostProcessor();
     }
+    @Bean
+    public Validator validator() {
+        return new LocalValidatorFactoryBean();
+    }
 
     Properties additionalProperties() {
         Properties properties = new Properties();
@@ -101,4 +107,5 @@ public class AppConfig implements WebMvcConfigurer {
         properties.setProperty("hibernate.connection.useUnicode", "true");
         return properties;
     }
+
 }

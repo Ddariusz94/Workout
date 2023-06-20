@@ -2,6 +2,9 @@ package org.coderslab.Model;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.coderslab.Service.ExerciseRepository;
+import org.coderslab.Service.UserRepository;
+import org.coderslab.Service.WorkoutRepository;
 
 import javax.persistence.*;
 
@@ -9,8 +12,8 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Table(name = "UserEXERCISES")
-
 public class UserExercises {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -28,11 +31,13 @@ public class UserExercises {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "exercise_id")
     private Exercise exercise;
 
     @ManyToOne
     @JoinColumn(name = "workout_id")
     private Workout workout;
+
+
 }

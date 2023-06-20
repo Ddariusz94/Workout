@@ -25,12 +25,4 @@ public class Workout {
     @Column(name = "level")
     private String level;
 
-    @ManyToMany
-    private Set<User> User;
-
-    @OneToMany
-    private List<UserExercises> UserExercises;
-    @ManyToOne
-    @JoinColumn(name= "exercise_id")
-    private Exercise exercise;
 }

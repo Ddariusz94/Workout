@@ -1,7 +1,14 @@
 package org.coderslab.Controller;
 
+import org.coderslab.Dao.UserDao;
 import org.coderslab.Dao.UserExerciseDao;
+import org.coderslab.Model.Exercise;
+import org.coderslab.Model.User;
 import org.coderslab.Model.UserExercises;
+import org.coderslab.Model.Workout;
+import org.coderslab.Service.ExerciseRepository;
+import org.coderslab.Service.UserRepository;
+import org.coderslab.Service.WorkoutRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,9 +20,15 @@ import java.util.List;
 public class UserExerciseController {
 
     private final UserExerciseDao userExerciseDao;
+    private final ExerciseRepository exerciseRepository;
+    private final WorkoutRepository workoutRepository;
+    private final UserRepository userRepository;
 
-    public UserExerciseController(UserExerciseDao userExerciseDao) {
+    public UserExerciseController(UserExerciseDao userExerciseDao, ExerciseRepository exerciseRepository, WorkoutRepository workoutRepository, UserRepository userRepository) {
         this.userExerciseDao = userExerciseDao;
+        this.exerciseRepository = exerciseRepository;
+        this.workoutRepository = workoutRepository;
+        this.userRepository = userRepository;
     }
 
     @GetMapping
@@ -29,12 +42,13 @@ public class UserExerciseController {
         UserExercises userExercise = userExerciseDao.getUserExercisesById(id);
         return ResponseEntity.ok(userExercise);
     }
+    @PostMapping("/saveUserExercise")
+    public ResponseEntity<UserExercises> saveUserExercise(@RequestBody UserExercises userExercise) {
+        UserExercises saveExercise = userExerciseDao.saveUserExercise(userExercise);
 
-    @PostMapping
-    public ResponseEntity<UserExercises> addUserExercise(@RequestBody UserExercises userExercise) {
-        UserExercises createdUserExercise = userExerciseDao.saveUserExercise(userExercise);
-        return ResponseEntity.status(HttpStatus.CREATED).body(createdUserExercise);
+        return ResponseEntity.status(HttpStatus.CREATED).body(saveExercise);
     }
+
 
     @PutMapping("/{id}")
     public ResponseEntity<UserExercises> updateUserExercise(@PathVariable Long id, @RequestBody UserExercises updatedUserExercise) {
@@ -47,4 +61,5 @@ public class UserExerciseController {
         userExerciseDao.deleteUserExercise(id);
         return ResponseEntity.noContent().build();
     }
+
 }

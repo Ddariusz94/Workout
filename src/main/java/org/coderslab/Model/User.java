@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 import java.util.List;
 
 @Getter
@@ -18,15 +19,18 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Pattern(regexp = "^[a-zA-Z]+$", message = "Name should contain only letters")
     @Column(name = "name")
     private String name;
 
     @Column(name = "gender")
     private String gender;
-
+    @NotBlank(message = "Age should not be empty")
+    @Pattern(regexp = "\\d+", message = "Age should contain only digits")
     @Column(name = "age")
-    private Integer age;
+    private String age; // celowo zmienilem na String , wyjaśnione w 'FormController'
 
+    @Digits(integer = 3, fraction = 2, message = "Weight should be a numeric value")
     @Column(name = "weight")
     private Double weight;
 
@@ -38,5 +42,12 @@ public class User {
     )
     @JsonIgnore
     private List<Workout> workouts;
+    @ManyToOne
+    @JoinColumn(name = "exercise_id")
+    private Exercise exercise;
+
+    @ManyToOne
+    @JoinColumn(name = "workout_id")
+    private Workout workout;
 
 }
