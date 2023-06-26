@@ -4,7 +4,6 @@ import org.coderslab.Model.UserExercises;
 import org.coderslab.Service.UserExercisesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityNotFoundException;
 import javax.persistence.PersistenceContext;

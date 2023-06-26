@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -64,6 +65,13 @@ public class UserController {
         model.addAttribute("exercise", userDao.getAllExercises()); // Pobierz wszystkie ćwiczenia z bazy danych
         model.addAttribute("workout", userDao.getAllWorkouts()); // Pobierz wszystkie treningi z bazy danych
         return "userForm";
+    }
+    @GetMapping("/usersView")
+    public ModelAndView showUserList() {
+        List<User> users = userDao.getAllUsers();
+        ModelAndView modelAndView = new ModelAndView("userList");
+        modelAndView.addObject("users", users);
+        return modelAndView;
     }
 
 }

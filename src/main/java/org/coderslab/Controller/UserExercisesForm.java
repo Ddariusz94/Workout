@@ -1,20 +1,20 @@
 package org.coderslab.Controller;
+
+import lombok.RequiredArgsConstructor;
 import org.coderslab.Dao.UserExerciseDao;
-import org.coderslab.Model.Exercise;
-import org.coderslab.Model.User;
-import org.coderslab.Model.UserExercises;
-import org.coderslab.Model.Workout;
+import org.coderslab.Model.*;
 import org.coderslab.Service.ExerciseRepository;
 import org.coderslab.Service.UserRepository;
 import org.coderslab.Service.WorkoutRepository;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collection;
+
 @Controller
 @RequestMapping("/userExercisesForm")
+@RequiredArgsConstructor
 public class UserExercisesForm {
 
     private final UserExerciseDao userExerciseDao;
@@ -22,11 +22,19 @@ public class UserExercisesForm {
     private final WorkoutRepository workoutRepository;
     private final UserRepository userRepository;
 
-    public UserExercisesForm(UserExerciseDao userExerciseDao, ExerciseRepository exerciseRepository, WorkoutRepository workoutRepository, UserRepository userRepository) {
-        this.userExerciseDao = userExerciseDao;
-        this.exerciseRepository = exerciseRepository;
-        this.workoutRepository = workoutRepository;
-        this.userRepository = userRepository;
+    @ModelAttribute("users")
+    public Collection<User> modelUsers() {
+        return userRepository.findAll();
+    }
+
+    @ModelAttribute("workouts")
+    public Collection<Workout> modelWorkouts() {
+        return workoutRepository.findAll();
+    }
+
+    @ModelAttribute("exercises")
+    public Collection<Exercise> modelExercises() {
+        return exerciseRepository.findAll();
     }
 
     @GetMapping("/form")
@@ -35,28 +43,12 @@ public class UserExercisesForm {
         return "userExerciseForm";
     }
 
-    @PostMapping("/form")
-    public String addUserExercise(@ModelAttribute("userExercise") UserExercises userExercise,
-                                  @RequestParam("exercise") Long exerciseId,
-                                  @RequestParam("user") Long userId,
-                                  @RequestParam("workout") Long workoutId,
-                                  @RequestParam("rep") Integer rep,
-                                  @RequestParam("time") Integer time,
-                                  @RequestParam("trainingDays") Integer trainingDays) {
-        Exercise exercise = exerciseRepository.findById(exerciseId).orElse(null);
-        User user = userRepository.findById(userId).orElse(null);
-        Workout workout = workoutRepository.findById(workoutId).orElse(null);
-
-        userExercise.setExercise(exercise);
-        userExercise.setUser(user);
-        userExercise.setWorkout(workout);
-        userExercise.setRep(rep);
-        userExercise.setTime(time);
-        userExercise.setTrainingDays(trainingDays);
-
-        UserExercises createdUserExercise = userExerciseDao.saveUserExercise(userExercise);
-        // Przekierowanie użytkownika do nowego widoku po dodaniu ćwiczenia
-        return "index";
+   @PostMapping("/form")
+   public String addUserExercise(
+            @ModelAttribute("userExercise") UserExercises userExercise
+    ) {
+        userExerciseDao.saveUserExercise(userExercise);
+        return "userExerciseForm";
     }
 
     @GetMapping("/success")

@@ -9,17 +9,17 @@
 <h2>User Exercise Form</h2>
 
 <form:form action="/userExercisesForm/form" method="post" modelAttribute="userExercise">
-    <label for="exercise">Exercise ID:</label>
-    <form:input path="exercise" required="true" /><br>
-    <label for="user">User ID:</label>
-    <form:input path="user" required="true" /><br>
-    <label for="workout">Workout ID:</label>
-    <form:input path="workout" required="true" /><br>
-    <label for="rep">Rep:</label>
+    <form:label path="exercise">Exercise:</form:label>
+    <form:select path="exercise.id" required="true" itemValue="id" itemLabel="name" items="${exercises}" /><br>
+    <form:label path="user">User:</form:label>
+    <form:select path="user.id" required="true" itemValue="id" itemLabel="name" items="${users}" /><br>
+    <form:label path="workout">Workout:</form:label>
+    <form:select path="workout.id" required="true" itemValue="id" itemLabel="name" items="${workouts}" /><br>
+    <form:label path="rep">Rep:</form:label>
     <form:input path="rep" required="true" /><br>
-    <label for="time">Time:</label>
+    <form:label path="time">Time:</form:label>
     <form:input path="time" required="true" /><br>
-    <label for="trainingDays">Training Days:</label>
+    <form:label path="trainingDays">Training Days:</form:label>
     <form:input path="trainingDays" required="true" /><br>
 
     <input type="submit" value="Submit">

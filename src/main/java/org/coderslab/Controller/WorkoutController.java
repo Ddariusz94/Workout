@@ -4,7 +4,10 @@ import org.coderslab.Dao.WorkoutDao;
 import org.coderslab.Model.Workout;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
+
 import java.util.List;
 
 @RestController
@@ -20,6 +23,11 @@ public class WorkoutController {
     @GetMapping
     public List<Workout> getAllWorkouts() {
         return workoutDao.getAllWorkouts();
+    }
+    @GetMapping("/list")
+    public ModelAndView showWorkoutList() {
+        List<Workout> workouts = workoutDao.getAllWorkouts();
+        return new ModelAndView("workoutList", "workouts", workouts);
     }
 
     @GetMapping("/{id}")
