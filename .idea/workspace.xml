@@ -10,20 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="224d39e1-8fe4-4225-952e-87f38f4f10d7" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/exerciseDetails.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/exerciseNameInstruction.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userExercisesList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/workoutList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/ExerciseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/ExerciseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/FormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserExerciseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserExerciseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserExercisesForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/UserExercisesForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/WorkoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Controller/WorkoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Dao/UserExerciseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Dao/UserExerciseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Service/UserExercisesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Service/UserExercisesRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userExerciseForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userExerciseForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coderslab/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coderslab/Model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +83,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ddariuz94/Pulpit/PROJECT COPY/Projekt Workout/pom.xml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ddariuz94/Pulpit/VERSION/v2.5/Test/pom.xml&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -316,7 +309,11 @@
       <workItem from="1687249699597" duration="1008000" />
       <workItem from="1687601523590" duration="7338000" />
       <workItem from="1687790403785" duration="5276000" />
-      <workItem from="1687803784353" duration="1497000" />
+      <workItem from="1687803784353" duration="2878000" />
+      <workItem from="1688217484397" duration="302000" />
+      <workItem from="1688219234220" duration="1011000" />
+      <workItem from="1688312308217" duration="1241000" />
+      <workItem from="1688393739374" duration="4967000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1685699467791</created>
@@ -353,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687249770420</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="init commit">
+      <created>1687805395065</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687805395065</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

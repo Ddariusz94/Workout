@@ -45,7 +45,7 @@ public class UserController {
         User createdUser = userDao.createUser(user);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdUser);
     }
-    @PutMapping("/update/{id}") // metoda do sprawdzenia
+    @PutMapping("/update/{id}")
     public ResponseEntity<User> updateUser(@PathVariable("id") Long id, @RequestBody User user) {
         User updateUser = userDao.updateUser(id, user);
         if (updateUser != null) {
@@ -66,7 +66,7 @@ public class UserController {
         model.addAttribute("workout", userDao.getAllWorkouts()); // Pobierz wszystkie treningi z bazy danych
         return "userForm";
     }
-    @GetMapping("/usersView")
+    @GetMapping("/usersView") // WIDOK .JSP
     public ModelAndView showUserList() {
         List<User> users = userDao.getAllUsers();
         ModelAndView modelAndView = new ModelAndView("userList");

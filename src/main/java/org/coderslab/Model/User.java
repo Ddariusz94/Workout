@@ -13,7 +13,8 @@ import java.util.List;
 @Setter
 @Entity
 @Table(name = "USER")
-@JsonSerialize
+@JsonSerialize //Adnotacja @JsonSerialize jest używana w kontekście biblioteki Jackson,
+// która jest popularną biblioteką do przekształcania obiektów Java na format JSON i odwrotnie.
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,9 +29,9 @@ public class User {
     @NotBlank(message = "Age should not be empty")
     @Pattern(regexp = "\\d+", message = "Age should contain only digits")
     @Column(name = "age")
-    private String age; // celowo zmienilem na String , wyjaśnione w 'FormController'
+    private String age;
 
-    @Digits(integer = 3, fraction = 2, message = "Weight should be a numeric value")
+    @Digits(integer = 3, fraction = 2)
     @Column(name = "weight")
     private Double weight;
 

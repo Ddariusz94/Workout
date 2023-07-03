@@ -45,7 +45,7 @@ public class UserExerciseController {
         UserExercises userExercise = userExerciseDao.getUserExercisesById(id);
         return ResponseEntity.ok(userExercise);
     }
-    @GetMapping("/userExercises")
+    @GetMapping("/userExercises") // Widok .JSP
     public ModelAndView showUserExercises() {
         List<UserExercises> userExercises = userExerciseRepository.findAll();
         return new ModelAndView("userExercisesList", "userExercises", userExercises);

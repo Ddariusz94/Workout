@@ -59,17 +59,17 @@ public class ExerciseController {
     public ModelAndView getExerciseByName(@PathVariable String name) {
         Exercise exercise = exerciseDao.getExerciseByName(name);
         return new ModelAndView("exercises", Map.of("exercise", exercise));
-    }
+    } //WIDOK .JSP
     @GetMapping(value = "/{id}/details")
     public ModelAndView showExerciseDetails(@PathVariable Long id) {
         Exercise exercise = exerciseDao.getExerciseById(id);
         return new ModelAndView("exerciseDetails", "exercise", exercise);
-    }
+    } //WIDOK .JSP
     @GetMapping(value = "/{id}/name-instruction")
     public ModelAndView getExerciseNameAndInstruction(@PathVariable Long id) {
         Exercise exercise = exerciseDao.getExerciseById(id);
         ModelAndView modelAndView = new ModelAndView("exerciseNameInstruction");
         modelAndView.addObject("exercise", exercise);
         return modelAndView;
-    }
+    } //WIDOK .JSP
 }

@@ -41,7 +41,7 @@ public class FormController {
             model.addAttribute("formErrors", bindingResult);
             return "registration-form";
         }
-        if (!isNameValid(user.getName())) { // walidacja dla pola name PRZYPADEK 1
+        if (!isNameValid(user.getName())) { // walidacja dla pola name
             bindingResult.rejectValue("name", "name.invalid", "Name should contain only letters");
             model.addAttribute("formErrors", bindingResult);
             return "registration-form";

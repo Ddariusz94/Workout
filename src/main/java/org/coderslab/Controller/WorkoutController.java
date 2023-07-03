@@ -24,7 +24,7 @@ public class WorkoutController {
     public List<Workout> getAllWorkouts() {
         return workoutDao.getAllWorkouts();
     }
-    @GetMapping("/list")
+    @GetMapping("/list") // WIDOK .JSP
     public ModelAndView showWorkoutList() {
         List<Workout> workouts = workoutDao.getAllWorkouts();
         return new ModelAndView("workoutList", "workouts", workouts);
